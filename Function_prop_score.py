@@ -1,6 +1,4 @@
 import numpy as np
-
-
 def maxob(ob,available_action):
     p=-np.inf
     m=0

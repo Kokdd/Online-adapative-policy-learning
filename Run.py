@@ -5,7 +5,7 @@ from scipy.stats import norm
 
 from Action import action
 from Observation import observation
-from Functions import MonteCarlo_prop_score
+from Function_prop_score import MonteCarlo_prop_score
 
 
 def Run(K,snr,X):
@@ -118,8 +118,8 @@ def Run(K,snr,X):
 Cu_Regret=np.zeros(10)
 Regret=np.zeros(10)
 stop_time=np.zeros(10)
-for k in range(0,1):
-    for i in range(0,1):
+for k in range(0,10):
+    for i in range(0,64):
         Cu_Re,Re,st=Run(5*k+5,0.125,1)
         Cu_Regret[k]+=Cu_Re/64
         stop_time[k]+=st/64
