@@ -33,6 +33,7 @@ python Run.py
 - **Observation.py** Given the arm, we would observe a outcome based on the arm's reward and this "observe" movement is defined under the class Observation.
 - **Function_prop_score.py** This includes the function used to calculate the propensity score of the arms.
 - **Run.py** The main body of the code, whose design strictly follows the algorithms in the paper. There are parameters that people can change at the last loop, including the SNR, the times of the initial observations, etc.
+- **Run.ipynb**,**Run-high-SNR.ipynb**  Two experiments based on the setting of the paper. The results are shown at last.
 
 ## Authors
 
